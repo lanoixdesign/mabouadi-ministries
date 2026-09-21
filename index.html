@@ -1,0 +1,1507 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mabouadi Ministries | Équiper, Impacter & Transformer les Nations</title>
+    <!-- Favicon Integration -->
+    <link rel="icon" type="image/png" href="https://mabouadiministries.com/wp-content/uploads/2026/09/Pour-le-site-de-MM-600x900.png" onerror="this.href='https://placehold.co/64x64/581c87/ffffff?text=MM'">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        parme: {
+                            50: '#faf5ff',
+                            100: '#f3e8ff',
+                            200: '#e9d5ff',
+                            300: '#d8b4fe',
+                            400: '#c084fc',
+                            500: '#a855f7',
+                            600: '#9333ea',
+                            700: '#7e22ce',
+                            800: '#6b21a8',
+                            900: '#581c87',
+                            950: '#3b0764',
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .gradient-parme {
+            background: linear-gradient(135deg, #3b0764 0%, #581c87 50%, #7e22ce 100%);
+        }
+        .gradient-soft-parme {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+        }
+        .parme-glow {
+            box-shadow: 0 10px 30px -10px rgba(147, 51, 234, 0.3);
+        }
+    </style>
+</head>
+<body class="font-sans bg-slate-50 text-slate-800 antialiased selection:bg-parme-200 selection:text-parme-900">
+
+    <!-- Navigation Topbar -->
+    <div class="bg-parme-950 text-parme-100 text-xs py-2 px-4 border-b border-parme-800/50">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <span><i class="fa-solid fa-location-dot text-parme-300 mr-1.5"></i> Église CEEV Bordeaux, France</span>
+                <span class="hidden md:inline"><i class="fa-solid fa-envelope text-parme-300 mr-1.5"></i> contact@mabouadiministries.com</span>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#invitation" class="text-amber-300 font-semibold hover:underline flex items-center gap-1">
+                    <i class="fa-solid fa-calendar-check text-xs"></i> Inviter les Pasteurs
+                </a>
+                <span class="text-parme-700">|</span>
+                <a href="#partenaire" class="hover:text-white transition">Devenir Partenaire</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-parme-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full overflow-hidden bg-parme-950 flex items-center justify-center shadow-md group-hover:scale-105 transition-transform duration-300 border border-parme-300">
+                        <img src="https://mabouadiministries.com/wp-content/uploads/2026/09/Pour-le-site-de-MM-600x900.png" alt="Mabouadi Ministries Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div>
+                        <span class="block font-serif font-bold text-xl text-parme-950 tracking-tight">MABOUADI</span>
+                        <span class="block text-xs font-semibold tracking-widest text-parme-600 uppercase">Ministries</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav Links -->
+                <nav class="hidden lg:flex items-center space-x-8 text-sm font-medium text-slate-700">
+                    <a href="#accueil" class="hover:text-parme-700 transition">Accueil</a>
+                    <a href="#a-propos" class="hover:text-parme-700 transition">À Propos</a>
+                    <a href="#ecoles" class="hover:text-parme-700 transition">Écoles & Formations</a>
+                    <a href="#coaching" class="hover:text-parme-700 transition">Coaching</a>
+                    <a href="#boutique" class="hover:text-parme-700 transition font-semibold text-parme-800 flex items-center gap-1">
+                        <i class="fa-solid fa-store text-xs text-amber-500"></i> Boutique
+                    </a>
+                    <a href="#invitation" class="text-parme-700 font-semibold hover:text-parme-900 transition flex items-center gap-1">
+                        <i class="fa-solid fa-paper-plane text-xs"></i> Inviter
+                    </a>
+                    <a href="#temoignages" class="hover:text-parme-700 transition">Témoignages</a>
+                </nav>
+
+                <!-- Action Button -->
+                <div class="hidden lg:flex items-center space-x-3">
+                    <a href="#invitation" class="px-5 py-2.5 rounded-full bg-parme-700 hover:bg-parme-800 text-white font-semibold text-sm transition shadow-md hover:shadow-lg flex items-center gap-2">
+                        <span>Faire une demande</span>
+                        <i class="fa-solid fa-arrow-right text-xs"></i>
+                    </a>
+                    <button onclick="openAdminLogin()" class="px-3.5 py-2.5 rounded-full bg-parme-100 hover:bg-parme-200 text-parme-900 font-semibold text-sm transition flex items-center gap-1.5" title="Accès Admin">
+                        <i class="fa-solid fa-lock text-xs"></i>
+                        <span>Admin</span>
+                    </button>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="menuBtn" class="lg:hidden p-2 rounded-lg text-slate-700 hover:bg-parme-50 transition">
+                    <i class="fa-solid fa-bars text-xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Drawer Menu -->
+        <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-parme-100 px-4 pt-2 pb-6 space-y-3">
+            <a href="#accueil" class="block py-2 text-slate-700 font-medium hover:text-parme-700">Accueil</a>
+            <a href="#a-propos" class="block py-2 text-slate-700 font-medium hover:text-parme-700">À Propos</a>
+            <a href="#ecoles" class="block py-2 text-slate-700 font-medium hover:text-parme-700">Écoles & Formations</a>
+            <a href="#coaching" class="block py-2 text-slate-700 font-medium hover:text-parme-700">Coaching</a>
+            <a href="#boutique" class="block py-2 text-parme-800 font-semibold flex items-center gap-1.5"><i class="fa-solid fa-store text-amber-500"></i> Boutique & Librairie</a>
+            <a href="#invitation" class="block py-2 text-parme-700 font-semibold">Inviter le Couple Pastoral</a>
+            <a href="#temoignages" class="block py-2 text-slate-700 font-medium hover:text-parme-700">Témoignages</a>
+            <div class="pt-2 flex gap-2">
+                <a href="#invitation" class="flex-1 text-center py-3 rounded-xl bg-parme-700 text-white font-semibold text-sm">
+                    Envoyer une invitation
+                </a>
+                <button onclick="openAdminLogin()" class="px-4 py-3 rounded-xl bg-parme-100 text-parme-900 font-semibold text-sm">
+                    <i class="fa-solid fa-lock"></i> Admin
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="accueil" class="relative overflow-hidden gradient-parme text-white pt-16 pb-24 lg:pt-24 lg:pb-32">
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#e9d5ff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-parme-800/60 border border-parme-500/40 text-parme-200 text-xs sm:text-sm font-medium backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+                        <span>Ministère d'Enseignement & de Révélation</span>
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-tight">
+                        Donner une forme à <span class="text-transparent bg-clip-text bg-gradient-to-r from-parme-200 via-amber-200 to-white">votre futur</span> et impacter les Nations
+                    </h1>
+
+                    <p class="text-base sm:text-lg text-parme-100/90 max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Mabouadi Ministries équipe et propulse les chrétiens à prendre leur place dans leurs sphères d'influence (Ethnos), sous la conduite dynamique des Pasteurs & Coachs Sosthène & Nina MABOUADI.
+                    </p>
+
+                    <!-- WhatsApp Daily Meditation Link - Made more discreet -->
+                    <div class="pt-1 flex items-center justify-center lg:justify-start gap-2 text-xs text-parme-200">
+                        <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-parme-900/60 border border-parme-500/20">
+                            <i class="fa-brands fa-whatsapp text-emerald-400"></i>
+                            <span>Canal WhatsApp :</span>
+                            <a href="https://whatsapp.com/channel/0029VbDNaQ3Lo4hfjXT47g3L" target="_blank" class="text-amber-300 font-semibold hover:underline">
+                                La Méditation du Jour
+                            </a>
+                        </span>
+                    </div>
+
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2">
+                        <a href="#invitation" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-500 hover:to-amber-600 text-parme-950 font-bold shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-calendar-plus"></i>
+                            <span>Inviter pour un Événement</span>
+                        </a>
+                        <a href="#boutique" class="w-full sm:w-auto px-8 py-4 rounded-full bg-parme-900/80 hover:bg-parme-800 border border-parme-500/30 text-white font-semibold transition text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-store text-amber-300"></i>
+                            <span>Visiter la Boutique</span>
+                        </a>
+                    </div>
+
+                    <!-- Key Metrics -->
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-parme-800/60 max-w-lg mx-auto lg:mx-0">
+                        <div>
+                            <div class="font-serif text-2xl sm:text-3xl font-bold text-amber-300">100%</div>
+                            <div class="text-xs text-parme-200">Onction Prophétique</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-2xl sm:text-3xl font-bold text-amber-300">4+</div>
+                            <div class="text-xs text-parme-200">Pôles de Coaching</div>
+                        </div>
+                        <div>
+                            <div class="font-serif text-2xl sm:text-3xl font-bold text-amber-300">Nations</div>
+                            <div class="text-xs text-parme-200">Impact Global</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Hero Image Frame (Official Asset) -->
+                <div class="lg:col-span-5 flex justify-center">
+                    <div class="relative w-full max-w-md">
+                        <div class="absolute -inset-1.5 bg-gradient-to-r from-amber-400 to-parme-400 rounded-3xl blur-xl opacity-40"></div>
+                        <div class="relative bg-parme-900 rounded-2xl overflow-hidden border-2 border-parme-400/30 shadow-2xl">
+                            <img src="https://mabouadiministries.com/wp-content/uploads/2026/09/Pour-le-site-de-MM-600x900.png" 
+                                 alt="Sosthène & Nina MABOUADI" 
+                                 class="w-full h-auto object-cover object-top hover:scale-105 transition duration-700">
+                            
+                            <div class="absolute bottom-0 inset-x-0 bg-gradient-to-t from-parme-950 via-parme-950/80 to-transparent p-6 text-center">
+                                <h2 class="font-serif font-bold text-2xl text-white">Sosthène & Nina MABOUADI</h2>
+                                <p class="text-xs font-medium text-amber-300 uppercase tracking-wider mt-1">Pasteurs · Conférenciers · Authors · Master Coachs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="a-propos" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-parme-700 bg-parme-50 px-3 py-1 rounded-full border border-parme-200">Notre Identité</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">Sosthène & Nina MABOUADI</h2>
+                <p class="text-slate-600 mt-4 leading-relaxed">
+                    Pasteurs de l'église CEEV à Bordeaux, ordonnés au rang de prophète et de pasteur. Tous deux coachs certifiés, ils équipent le Corps de Christ pour qu'il influence la société.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-gradient-soft-parme border border-parme-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-parme-700 text-white flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-scroll"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Notre Parcours</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Titulaires d'une licence délivrée par "Christ Resurrection Ministries USA", ordonnés par le feu Dr. Prophète Richard Fletcher (Texas) ainsi que l'Apôtre André Larrue et son épouse Pastor Chantal Larrue.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-gradient-soft-parme border border-parme-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-parme-700 text-white flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Notre Mission</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Équiper les chrétiens afin qu'ils influencent leur Ethnos (domaine d'activité). Aider chaque croyant à prendre sa place sur le concert des nations et faire des disciples.
+                    </p>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-gradient-soft-parme border border-parme-100 hover:shadow-lg transition">
+                    <div class="w-12 h-12 rounded-xl bg-parme-700 text-white flex items-center justify-center text-xl mb-6">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-slate-900 mb-3">Notre Vision</h3>
+                    <p class="text-slate-600 text-sm leading-relaxed">
+                        Voir des chrétiens opérer dans les sphères de décision pour annoncer Christ aux autorités et dirigeants de nos Nations, dans un temps de visitation divine.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schools & Formations -->
+    <section id="ecoles" class="py-20 bg-slate-50 border-y border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-widest text-parme-700">Plateformes & Enseignements</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-2">Découvrez Nos Écoles</h2>
+                </div>
+                <p class="text-slate-600 text-sm max-w-md mt-4 md:mt-0">
+                    Des programmes complets d'enseignement prophétique, d'accompagnement familial et d'autonomisation des femmes.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-parme-400 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-parme-100 text-parme-700 flex items-center justify-center text-lg mb-4 group-hover:bg-parme-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">EPI</h3>
+                    <p class="text-xs font-semibold text-parme-600 uppercase mb-2">École Prophétique Internationale</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Formations 2025 – 2026 pour développer le discernement et la voix prophétique pour les nations.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-parme-400 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-parme-100 text-parme-700 flex items-center justify-center text-lg mb-4 group-hover:bg-parme-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-crown"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">Femmes Multidimensionnelles</h3>
+                    <p class="text-xs font-semibold text-parme-600 uppercase mb-2">Business, Diplomates, Magistrats</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Déploiement du potentiel féminin dans les sphères du droit, de la santé, des affaires et du ministère.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-parme-400 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-parme-100 text-parme-700 flex items-center justify-center text-lg mb-4 group-hover:bg-parme-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-house-chimney-heart"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">École de la Famille</h3>
+                    <p class="text-xs font-semibold text-parme-600 uppercase mb-2">Alliance de Fécondité</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Restauration des foyers, accompagnement des couples et soutien spirituel pour l'enfantement.</p>
+                </div>
+
+                <div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 hover:border-parme-400 transition group">
+                    <div class="w-10 h-10 rounded-lg bg-parme-100 text-parme-700 flex items-center justify-center text-lg mb-4 group-hover:bg-parme-700 group-hover:text-white transition">
+                        <i class="fa-solid fa-briefcase"></i>
+                    </div>
+                    <h3 class="font-bold text-slate-900 text-lg mb-2">BEIL</h3>
+                    <p class="text-xs font-semibold text-parme-600 uppercase mb-2">Leadership & Impact</p>
+                    <p class="text-slate-600 text-sm leading-relaxed">Espace de perfectionnement exécutif et entrepreneurial au service du Royaume de Dieu.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Coaching Section -->
+    <section id="coaching" class="py-20 bg-parme-950 text-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-amber-300 bg-parme-900 px-3 py-1 rounded-full border border-parme-700">Master Coaching Certifié</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mt-3">Nos Pôles d'Accompagnement</h2>
+                <p class="text-parme-200 mt-4 text-sm sm:text-base">
+                    Des programmes sur-mesure pour libérer votre potentiel, structurer votre vision d'entreprise et maximiser votre impact ministériel.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="bg-parme-900/80 p-6 rounded-2xl border border-parme-800 hover:border-amber-400 transition">
+                    <div class="text-amber-400 text-2xl mb-4"><i class="fa-solid fa-heart-pulse"></i></div>
+                    <h3 class="font-bold text-lg text-white mb-2">Coach de Vie</h3>
+                    <p class="text-amber-200/90 italic text-xs mb-3">« Libérez votre potentiel intérieur »</p>
+                    <p class="text-parme-200 text-xs leading-relaxed">Inspire le changement positif, la croissance personnelle profonde et un accomplissement durable.</p>
+                </div>
+
+                <div class="bg-parme-900/80 p-6 rounded-2xl border border-parme-800 hover:border-amber-400 transition">
+                    <div class="text-amber-400 text-2xl mb-4"><i class="fa-solid fa-chart-line"></i></div>
+                    <h3 class="font-bold text-lg text-white mb-2">Business Coach</h3>
+                    <p class="text-amber-200/90 italic text-xs mb-3">« De la vision à la réalité entrepreneuriale »</p>
+                    <p class="text-parme-200 text-xs leading-relaxed">Développez des stratégies solides pour surmonter les défis et bâtir des entreprises florissantes pour Dieu.</p>
+                </div>
+
+                <div class="bg-parme-900/80 p-6 rounded-2xl border border-parme-800 hover:border-amber-400 transition">
+                    <div class="text-amber-400 text-2xl mb-4"><i class="fa-solid fa-building-columns"></i></div>
+                    <h3 class="font-bold text-lg text-white mb-2">Coach Exécutif</h3>
+                    <p class="text-amber-200/90 italic text-xs mb-3">« Impactez la sphère des Nations »</p>
+                    <p class="text-parme-200 text-xs leading-relaxed">Préparation comme Daniel et Joseph pour servir et conseiller auprès des personnes haut placées.</p>
+                </div>
+
+                <div class="bg-parme-900/80 p-6 rounded-2xl border border-parme-800 hover:border-amber-400 transition">
+                    <div class="text-amber-400 text-2xl mb-4"><i class="fa-solid fa-church"></i></div>
+                    <h3 class="font-bold text-lg text-white mb-2">Coach Ecclésiastique</h3>
+                    <p class="text-amber-200/90 italic text-xs mb-3">« Bâtir un ministère solide »</p>
+                    <p class="text-parme-200 text-xs leading-relaxed">Clés stratégiques pour faire face aux défis de l'église d'aujourd'hui et marquer votre localité.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOUTIQUE / LIBRAIRIE SECTION -->
+    <section id="boutique" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-parme-700 bg-parme-50 px-3 py-1 rounded-full border border-parme-200">
+                    <i class="fa-solid fa-store text-amber-500 mr-1"></i> Ressources & Librairie
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">La Boutique Mabouadi Ministries</h2>
+                <p class="text-slate-600 mt-4 leading-relaxed">
+                    Commandez les ouvrages, enseignements audio, manuels prophétiques et guides de prière écrits par les Pasteurs Sosthène & Nina MABOUADI pour fortifier votre marche spirituelle.
+                </p>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Product 1 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col group">
+                    <div class="h-64 bg-gradient-to-br from-parme-800 to-parme-950 p-6 flex items-center justify-center relative text-white text-center">
+                        <div class="absolute top-4 right-4 bg-amber-400 text-parme-950 text-xs font-extrabold px-3 py-1 rounded-full shadow">
+                            Best-seller
+                        </div>
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-parme-700 mx-auto flex items-center justify-center text-3xl mb-3 shadow-md">
+                                <i class="fa-solid fa-book-bible"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-300 uppercase tracking-widest block">Livre / Guide Spirituel</span>
+                            <h3 class="font-serif font-bold text-xl mt-1">Prendre sa Place dans son Ethnos</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Un manuel de référence indispensable pour comprendre comment influencer votre sphère socioprofessionnelle avec une onction et une sagesse divines.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-200">
+                            <span class="font-serif font-bold text-lg text-parme-900">22,00 €</span>
+                            <button onclick="openCheckoutModal('Prendre sa Place dans son Ethnos', 22)" class="px-4 py-2.5 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-xs transition flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Commander</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col group">
+                    <div class="h-64 bg-gradient-to-br from-parme-900 to-slate-900 p-6 flex items-center justify-center relative text-white text-center">
+                        <div class="absolute top-4 right-4 bg-parme-600 text-white text-xs font-extrabold px-3 py-1 rounded-full shadow">
+                            Audio Numérique
+                        </div>
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-parme-800 mx-auto flex items-center justify-center text-3xl mb-3 shadow-md">
+                                <i class="fa-solid fa-headphones"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-300 uppercase tracking-widest block">Série d'Enseignements</span>
+                            <h3 class="font-serif font-bold text-xl mt-1">L'École Prophétique : Les Fondations</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Coffret de 6 audios exclusifs pour aiguiser votre discernement spirituel, reconnaître la voix de l'Esprit et exercer le don prophétique selon les Écritures.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-200">
+                            <span class="font-serif font-bold text-lg text-parme-900">35,00 €</span>
+                            <button onclick="openCheckoutModal('Coffret Audio - École Prophétique', 35)" class="px-4 py-2.5 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-xs transition flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Commander</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col group">
+                    <div class="h-64 bg-gradient-to-br from-amber-700 to-parme-950 p-6 flex items-center justify-center relative text-white text-center">
+                        <div class="absolute top-4 right-4 bg-amber-400 text-parme-950 text-xs font-extrabold px-3 py-1 rounded-full shadow">
+                            Nouveau
+                        </div>
+                        <div>
+                            <div class="w-16 h-16 rounded-2xl bg-parme-800 mx-auto flex items-center justify-center text-3xl mb-3 shadow-md">
+                                <i class="fa-solid fa-heart-circle-check"></i>
+                            </div>
+                            <span class="text-xs font-semibold text-amber-200 uppercase tracking-widest block">Guide de Prière</span>
+                            <h3 class="font-serif font-bold text-xl mt-1">L'Alliance de Fécondité & Restauration</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <p class="text-slate-600 text-xs leading-relaxed">
+                            Un guide puissant de prières prophétiques et décrets de foi pour les couples, la restauration du foyer et la promesse de la fécondité.
+                        </p>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-200">
+                            <span class="font-serif font-bold text-lg text-parme-900">18,50 €</span>
+                            <button onclick="openCheckoutModal('Guide - Alliance de Fécondité', 18.5)" class="px-4 py-2.5 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-xs transition flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Commander</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INVITATION FORM SECTION (Inspired by Yannis Gautier Inviter Form) -->
+    <section id="invitation" class="py-20 bg-gradient-soft-parme relative overflow-hidden">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-parme-100 text-parme-800 font-semibold text-xs border border-parme-300">
+                    <i class="fa-solid fa-calendar-star"></i> Demande d'Intervention & Invitation Officielle
+                </span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">
+                    Inviter Sosthène & Nina MABOUADI
+                </h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base leading-relaxed">
+                    Pour inviter les Pasteurs Sosthène & Nina MABOUADI à intervenir lors de votre culte, conférence, séminaire ou rassemblement international, veuillez remplir le formulaire ci-dessous. Notre équipe examinera votre demande avec soin.
+                </p>
+            </div>
+
+            <!-- Form Card Wrapper -->
+            <div class="bg-white rounded-3xl shadow-xl border border-parme-200 p-6 sm:p-10 relative">
+                
+                <div class="flex items-center space-x-3 mb-8 pb-6 border-b border-slate-100">
+                    <div class="w-10 h-10 rounded-full bg-parme-700 text-white flex items-center justify-center font-bold">
+                        <i class="fa-solid fa-paper-plane text-sm"></i>
+                    </div>
+                    <div>
+                        <h3 class="font-bold text-slate-900 text-lg">Formulaire d'invitation officielle</h3>
+                        <p class="text-xs text-slate-500">Délai moyen de réponse : 48h à 72h ouvrées</p>
+                    </div>
+                </div>
+
+                <!-- Form Element -->
+                <form id="invitationForm" onsubmit="handleFormSubmit(event)" class="space-y-6">
+                    
+                    <!-- Row 1: Prénom & Nom -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="firstname">
+                                Prénom <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="text" id="firstname" required placeholder="Votre prénom" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="lastname">
+                                Nom <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="text" id="lastname" required placeholder="Votre nom" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Row 2: Email & Téléphone -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="email">
+                                Email <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="email" id="email" required placeholder="nom@exemple.com" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="phone">
+                                Téléphone <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="tel" id="phone" required placeholder="+33 6 00 00 00 00" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Row 3: Organisation / Église & Ville -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="organization">
+                                Organisation / Église <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="text" id="organization" required placeholder="Nom de votre église ou organisme" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="city">
+                                Ville <span class="text-rose-500">*</span>
+                            </label>
+                            <input type="text" id="city" required placeholder="Ex: Paris, Libreville, Bruxelles" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Row 4: Pays & Type de Réunion -->
+                    <div class="grid sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="country">
+                                Pays <span class="text-rose-500">*</span>
+                            </label>
+                            <select id="country" required 
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm bg-white">
+                                <option value="" disabled selected>Sélectionnez un pays</option>
+                                <option value="France">France</option>
+                                <option value="Belgique">Belgique</option>
+                                <option value="Suisse">Suisse</option>
+                                <option value="Luxembourg">Luxembourg</option>
+                                <option value="Gabon">Gabon</option>
+                                <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                                <option value="Cameroun">Cameroun</option>
+                                <option value="Congo">Congo</option>
+                                <option value="Canada">Canada Francophone</option>
+                                <option value="DOM-TOM">DOM-TOM</option>
+                                <option value="Autre Afrique">Autre pays d'Afrique</option>
+                                <option value="Autres">Autre continent / Pays</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="meetingType">
+                                Type d'Événement / Réunion <span class="text-rose-500">*</span>
+                            </label>
+                            <select id="meetingType" required 
+                                    class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm bg-white">
+                                <option value="" disabled selected>Sélectionnez le type</option>
+                                <option value="Culte dominical">Culte dominical</option>
+                                <option value="Conférence">Conférence</option>
+                                <option value="Séminaire / Retraite">Séminaire / Retraite prophétique</option>
+                                <option value="Formation Executive">Formation Leadership / Business</option>
+                                <option value="Événement spécial">Événement spécial / Programme Femmes</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Row 5: Date souhaitée, Nombre de prises de parole, Budget -->
+                    <div class="grid sm:grid-cols-3 gap-6">
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="desiredDate">
+                                Date souhaitée
+                            </label>
+                            <input type="date" id="desiredDate" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="speakerships">
+                                Nombre d'interventions
+                            </label>
+                            <input type="text" id="speakerships" placeholder="Ex: 1, 2 ou 3 séances" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+
+                        <div>
+                            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="budget">
+                                Prise en charge / Modalités
+                            </label>
+                            <input type="text" id="budget" placeholder="Ex: Transport + Offrande + Hébergement" 
+                                   class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm">
+                        </div>
+                    </div>
+
+                    <!-- Row 6: Description -->
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2" for="description">
+                            Description de l'invitation & Détails du projet <span class="text-rose-500">*</span>
+                        </label>
+                        <textarea id="description" rows="4" required placeholder="Présentez brièvement le thème, le public attendu et vos objectifs..." 
+                                  class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none transition text-sm"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="pt-4 text-center">
+                        <button type="submit" 
+                                class="w-full sm:w-auto px-10 py-4 rounded-full bg-parme-700 hover:bg-parme-800 text-white font-bold text-base shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 inline-flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span>Envoyer l'invitation officielle</span>
+                        </button>
+                        <p class="text-xs text-slate-500 mt-3">
+                            Ce formulaire est réservé exclusivement aux invitations de ministères, églises et structures organisatrices.
+                        </p>
+                    </div>
+
+                </form>
+
+                <!-- Feedback Toast Message (Hidden by default) -->
+                <div id="feedbackMessage" class="hidden mt-6 p-6 rounded-2xl bg-emerald-50 border border-emerald-200 text-emerald-950 text-center space-y-2">
+                    <div class="w-12 h-12 rounded-full bg-emerald-500 text-white flex items-center justify-center mx-auto text-xl">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h4 class="font-serif font-bold text-xl text-emerald-900">Demande transmise avec succès !</h4>
+                    <p class="text-sm text-emerald-800 max-w-lg mx-auto leading-relaxed">
+                        Merci d'avoir pris le temps de formuler votre invitation. L'équipe du Ministère Mabouadi examinera votre demande et vous recontactera dans un délai de 48h à 72h.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ADMIN LOGIN MODAL -->
+    <div id="adminLoginModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl border border-parme-100 relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeAdminLogin()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-700">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-parme-700 text-white flex items-center justify-center mx-auto text-xl mb-3 shadow-md">
+                    <i class="fa-solid fa-shield-halved"></i>
+                </div>
+                <h3 class="font-serif text-2xl font-bold text-slate-900">Accès Administrateur</h3>
+                <p class="text-xs text-slate-500 mt-1">Espace réservé aux Pasteurs & au Secrétariat</p>
+            </div>
+            
+            <form onsubmit="handleAdminLogin(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">Mot de passe admin</label>
+                    <input type="password" id="adminPassword" required placeholder="Entrez le mot de passe (ex: admin2026)" 
+                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                </div>
+                <div id="loginError" class="hidden text-xs text-rose-600 font-semibold">Mot de passe incorrect. Essayez "admin2026".</div>
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-sm shadow-md transition">
+                    Se connecter au Panel
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- PRODUCT CHECKOUT MODAL -->
+    <div id="checkoutModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl border border-parme-100 relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeCheckoutModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-700">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-amber-400 text-parme-950 flex items-center justify-center mx-auto text-xl mb-3 shadow-md">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+                <h3 id="modalProductTitle" class="font-serif text-xl font-bold text-slate-900">Commander l'article</h3>
+                <p id="modalProductPrice" class="text-xs font-bold text-parme-700 mt-1">Prix : 0.00 €</p>
+            </div>
+            
+            <form onsubmit="handleCheckoutSubmit(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Nom complet</label>
+                    <input type="text" id="buyerName" required placeholder="Votre prénom et nom" 
+                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Email de livraison / téléchargement</label>
+                    <input type="email" id="buyerEmail" required placeholder="nom@exemple.com" 
+                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Adresse postale (si format papier)</label>
+                    <input type="text" id="buyerAddress" placeholder="Adresse, Ville, Pays" 
+                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                </div>
+                
+                <div id="checkoutSuccess" class="hidden p-3 bg-emerald-50 text-emerald-800 text-xs rounded-xl text-center font-semibold">
+                    Commande enregistrée avec succès ! Redirection vers le paiement...
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-sm shadow-md transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-lock text-xs"></i>
+                    <span>Procéder au Paiement Sécurisé</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- ADMIN PANEL DASHBOARD (Hidden by default) -->
+    <div id="adminPanel" class="fixed inset-0 z-50 bg-slate-100 hidden overflow-y-auto flex flex-col">
+        <!-- Top Admin Header -->
+        <header class="bg-parme-950 text-white px-6 py-4 flex justify-between items-center shadow-md">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-parme-700 flex items-center justify-center font-bold text-lg">
+                    MM
+                </div>
+                <div>
+                    <h2 class="font-serif font-bold text-lg">Mabouadi Ministries — Admin Panel</h2>
+                    <p class="text-xs text-parme-300">Gestion des invitations & Assistant Virtuel IA</p>
+                </div>
+            </div>
+            <div class="flex items-center space-x-3">
+                <button onclick="toggleAIWidget()" class="px-4 py-2 rounded-xl bg-amber-400 hover:bg-amber-500 text-parme-950 font-bold text-xs flex items-center gap-2 shadow transition">
+                    <i class="fa-solid fa-robot"></i>
+                    <span>Assistant IA</span>
+                </button>
+                <button onclick="closeAdminPanel()" class="px-4 py-2 rounded-xl bg-parme-900 hover:bg-rose-900 text-parme-200 hover:text-white font-semibold text-xs transition">
+                    <i class="fa-solid fa-right-from-bracket mr-1"></i> Quitter
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Admin Dashboard Content -->
+        <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full grid lg:grid-cols-12 gap-8">
+            
+            <!-- Left Data Section (Invitations, Products & Stats) -->
+            <div class="lg:col-span-8 space-y-6">
+                
+                <!-- Quick Stats Cards -->
+                <div class="grid sm:grid-cols-3 gap-4">
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="text-xs font-bold text-slate-400 uppercase">Total Invitations</div>
+                        <div id="statTotal" class="font-serif text-3xl font-bold text-parme-900 mt-1">3</div>
+                        <div class="text-xs text-emerald-600 mt-1"><i class="fa-solid fa-arrow-trend-up"></i> +2 cette semaine</div>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="text-xs font-bold text-slate-400 uppercase">En attente de validation</div>
+                        <div id="statPending" class="font-serif text-3xl font-bold text-amber-600 mt-1">2</div>
+                        <div class="text-xs text-slate-500 mt-1">Nécessite une réponse</div>
+                    </div>
+                    <div class="bg-white p-5 rounded-2xl border border-slate-200 shadow-sm">
+                        <div class="text-xs font-bold text-slate-400 uppercase">Articles en Boutique</div>
+                        <div id="statProducts" class="font-serif text-3xl font-bold text-parme-700 mt-1">3</div>
+                        <div class="text-xs text-parme-600 mt-1">Actifs en ligne</div>
+                    </div>
+                </div>
+
+                <!-- Tabs Navigation for Admin (Invitations vs Boutique) -->
+                <div class="flex border-b border-slate-200">
+                    <button onclick="switchAdminTab('invitations')" id="tabInvitationsBtn" class="px-5 py-3 font-bold text-sm border-b-2 border-parme-700 text-parme-900 transition">
+                        <i class="fa-solid fa-envelope mr-1.5"></i> Gestion des Invitations
+                    </button>
+                    <button onclick="switchAdminTab('boutique')" id="tabBoutiqueBtn" class="px-5 py-3 font-semibold text-sm border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition">
+                        <i class="fa-solid fa-store mr-1.5 text-amber-500"></i> Gestion de la Boutique
+                    </button>
+                </div>
+
+                <!-- Tab 1: Invitations Table Card -->
+                <div id="adminInvitationsSection" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+                    <div class="px-6 py-4 border-b border-slate-100 flex justify-between items-center">
+                        <h3 class="font-bold text-slate-900 text-base">Liste des Demandes d'Invitation</h3>
+                        <button onclick="loadInvitationsTable()" class="text-xs text-parme-700 font-semibold hover:underline">
+                            <i class="fa-solid fa-rotate mr-1"></i> Actualiser
+                        </button>
+                    </div>
+                    
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm text-slate-600">
+                            <thead class="bg-slate-50 text-xs uppercase text-slate-400 font-semibold border-b border-slate-200">
+                                <tr>
+                                    <th class="px-6 py-3">Organisateur</th>
+                                    <th class="px-6 py-3">Type & Église</th>
+                                    <th class="px-6 py-3">Lieu</th>
+                                    <th class="px-6 py-3">Statut</th>
+                                    <th class="px-6 py-3 text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminTableBody" class="divide-y divide-slate-100 text-xs">
+                                <!-- Dynamic rows populated via JS -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Tab 2: Boutique Panel Card (Hidden by default) -->
+                <div id="adminBoutiqueSection" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hidden space-y-6 p-6">
+                    <div class="flex justify-between items-center pb-4 border-b border-slate-100">
+                        <div>
+                            <h3 class="font-bold text-slate-900 text-base">Catalogue des Produits & Ressources</h3>
+                            <p class="text-xs text-slate-500">Gérez les livres, audios et guides disponibles sur le site</p>
+                        </div>
+                        <button onclick="openAddProductModal()" class="px-4 py-2 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-xs flex items-center gap-1.5 shadow">
+                            <i class="fa-solid fa-plus"></i> Ajouter un article
+                        </button>
+                    </div>
+
+                    <!-- Products Table -->
+                    <div class="overflow-x-auto">
+                        <table class="w-full text-left text-sm text-slate-600">
+                            <thead class="bg-slate-50 text-xs uppercase text-slate-400 font-semibold border-b border-slate-200">
+                                <tr>
+                                    <th class="px-6 py-3">Article</th>
+                                    <th class="px-6 py-3">Catégorie</th>
+                                    <th class="px-6 py-3">Prix</th>
+                                    <th class="px-6 py-3 text-right">Actions</th>
+                                </tr>
+                            </thead>
+                            <tbody id="adminProductsTableBody" class="divide-y divide-slate-100 text-xs">
+                                <!-- Populated dynamically -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right AI Assistant Widget Section -->
+            <div class="lg:col-span-4 flex flex-col bg-white rounded-2xl border border-parme-200 shadow-md overflow-hidden h-[600px] sticky top-24">
+                
+                <!-- AI Header -->
+                <div class="bg-gradient-to-r from-parme-900 to-parme-950 p-4 text-white flex items-center justify-between">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-8 h-8 rounded-lg bg-amber-400 text-parme-950 flex items-center justify-center font-bold text-sm shadow">
+                            <i class="fa-solid fa-robot"></i>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-sm">Assistant Secrétariat IA</h3>
+                            <p class="text-[10px] text-parme-200">Propulsé par Gemini</p>
+                        </div>
+                    </div>
+                    <span class="w-2.5 h-2.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                </div>
+
+                <!-- Chat Messages Scroll Container -->
+                <div id="aiChatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 text-xs bg-slate-50">
+                    <div class="flex items-start space-x-2">
+                        <div class="w-7 h-7 rounded-full bg-parme-700 text-white flex items-center justify-center shrink-0 font-bold text-xs">AI</div>
+                        <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-200 text-slate-700 max-w-[85%] leading-relaxed">
+                            Shalom ! Je suis votre assistant virtuel. Posez-moi vos questions sur les invitations reçues, ou demandez-moi d'ajouter directement un article en boutique !
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Prompt suggestions -->
+                <div class="px-3 py-2 bg-slate-100 border-t border-slate-200 flex flex-wrap gap-1.5">
+                    <button onclick="sendQuickPrompt('Résume-moi les invitations en attente')" class="text-[10px] bg-white border border-slate-300 hover:bg-parme-50 text-slate-700 px-2.5 py-1 rounded-full font-medium transition">
+                        📋 Résumer les invitations
+                    </button>
+                    <button onclick="sendQuickPrompt('Ajoute un nouveau livre : Cahier de Prières Prophétiques à 20 euros')" class="text-[10px] bg-white border border-slate-300 hover:bg-parme-50 text-slate-700 px-2.5 py-1 rounded-full font-medium transition">
+                        ✨ Ajouter un livre via l'IA
+                    </button>
+                </div>
+
+                <!-- AI Chat Input Form -->
+                <form onsubmit="handleAIChatSubmit(event)" class="p-3 bg-white border-t border-slate-200 flex items-center gap-2">
+                    <input type="text" id="aiChatInput" placeholder="Écrivez votre consigne à l'IA..." 
+                           class="flex-1 px-3 py-2.5 rounded-xl border border-slate-300 focus:border-parme-600 outline-none text-xs">
+                    <button type="submit" class="w-10 h-10 rounded-xl bg-parme-700 hover:bg-parme-800 text-white flex items-center justify-center shadow transition shrink-0">
+                        <i class="fa-solid fa-paper-plane text-xs"></i>
+                    </button>
+                </form>
+
+            </div>
+
+        </main>
+    </div>
+
+    <!-- ADD PRODUCT MODAL FOR ADMIN -->
+    <div id="addProductModal" class="fixed inset-0 z-50 bg-slate-950/70 backdrop-blur-sm hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl border border-parme-100 relative animate-in fade-in zoom-in duration-200">
+            <button onclick="closeAddProductModal()" class="absolute top-6 right-6 text-slate-400 hover:text-slate-700">
+                <i class="fa-solid fa-xmark text-lg"></i>
+            </button>
+            <div class="text-center mb-6">
+                <div class="w-12 h-12 rounded-2xl bg-parme-700 text-white flex items-center justify-center mx-auto text-xl mb-3 shadow-md">
+                    <i class="fa-solid fa-store"></i>
+                </div>
+                <h3 class="font-serif text-xl font-bold text-slate-900">Ajouter un Nouvel Article</h3>
+                <p class="text-xs text-slate-500 mt-1">L'article apparaîtra immédiatement dans la boutique</p>
+            </div>
+            
+            <form onsubmit="handleAdminAddProduct(event)" class="space-y-4">
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Titre de l'article</label>
+                    <input type="text" id="newProdTitle" required placeholder="Ex: Guide de Prière Prophétique" 
+                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                </div>
+                <div class="grid grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Prix (€)</label>
+                        <input type="number" step="0.5" id="newProdPrice" required placeholder="25.00" 
+                               class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Type / Catégorie</label>
+                        <input type="text" id="newProdCategory" required placeholder="Livre / Audio" 
+                               class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">URL de l'image (Optionnel)</label>
+                    <input type="url" id="newProdImage" placeholder="https://exemple.com/image.jpg" 
+                           class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm">
+                </div>
+                <div>
+                    <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Description courte</label>
+                    <textarea id="newProdDesc" rows="3" required placeholder="Résumé de l'ouvrage ou de l'enseignement..." 
+                              class="w-full px-4 py-3 rounded-xl border border-slate-300 focus:border-parme-600 focus:ring-2 focus:ring-parme-200 outline-none text-sm"></textarea>
+                </div>
+
+                <button type="submit" class="w-full py-3.5 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-sm shadow-md transition">
+                    Enregistrer et Publier
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Testimonials -->
+    <section id="temoignages" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-xs font-bold uppercase tracking-widest text-parme-700 bg-parme-50 px-3 py-1 rounded-full border border-parme-200">Témoignages</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-slate-900 mt-3">Ils rendent témoignage de nous</h2>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 relative">
+                    <div class="text-parme-300 text-4xl font-serif mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                        « Après 15 années de soupir après la joie de l'enfantement, lors d'une matinale de prières, le Seigneur est intervenu et m'a délivrée des fibromes. Je bénis le Seigneur pour les pasteurs Mabouadi ! »
+                    </p>
+                    <div class="border-t border-slate-200 pt-4">
+                        <div class="font-bold text-slate-900 text-sm">Anonyme</div>
+                        <div class="text-xs text-parme-600 font-medium">Matinale de prières avec les Pasteurs Mabouadi</div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 relative">
+                    <div class="text-parme-300 text-4xl font-serif mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                        « Lors d'un voyage missionnaire au Gabon, une parole prophétique s'est accomplie pour moi de manière spectaculaire auprès du Ministère de l'Intérieur. Gloire à Dieu pour ce ministère ! »
+                    </p>
+                    <div class="border-t border-slate-200 pt-4">
+                        <div class="font-bold text-slate-900 text-sm">Anonyme</div>
+                        <div class="text-xs text-parme-600 font-medium">Voyage Missionnaire au Gabon</div>
+                    </div>
+                </div>
+
+                <div class="p-8 rounded-2xl bg-slate-50 border border-slate-200 relative">
+                    <div class="text-parme-300 text-4xl font-serif mb-4"><i class="fa-solid fa-quote-left"></i></div>
+                    <p class="text-slate-700 text-sm leading-relaxed mb-6 italic">
+                        « À la Conférence Karis à Rabat, j'ai été délivrée de limitations intérieures. Une nouvelle page s'est ouverte et j'ai concrétisé les entreprises que le Seigneur m'avait mises à cœur. »
+                    </p>
+                    <div class="border-t border-slate-200 pt-4">
+                        <div class="font-bold text-slate-900 text-sm">Une invitée</div>
+                        <div class="text-xs text-parme-600 font-medium">Conférence Karis KARISFMD - Rabat</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partner Banner -->
+    <section id="partenaire" class="py-16 gradient-parme text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="max-w-3xl mx-auto space-y-6">
+                <span class="px-4 py-1.5 rounded-full bg-parme-800 text-amber-300 text-xs font-bold uppercase tracking-wider">L'Œuvre des Nations</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Devenez Partenaire du Ministère</h2>
+                <p class="text-parme-100 text-sm sm:text-base leading-relaxed">
+                    « La part doit être la même pour celui qui est descendu sur le champ de bataille et pour celui qui est resté près des bagages : ensemble ils partageront. » — 1 SAMUEL 30:24
+                </p>
+                <div class="pt-4">
+                    <a href="#invitation" class="px-8 py-4 rounded-full bg-amber-400 hover:bg-amber-500 text-parme-950 font-bold text-sm transition shadow-lg inline-flex items-center gap-2">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                        <span>Soutenir la Mission & Faire un Don</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-parme-950 text-parme-200 pt-16 pb-12 border-t border-parme-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-10 pb-12 border-b border-parme-900">
+                
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-11 h-11 rounded-full overflow-hidden bg-parme-800 flex items-center justify-center border border-parme-600 shadow">
+                            <img src="https://mabouadiministries.com/wp-content/uploads/2026/09/Pour-le-site-de-MM-600x900.png" alt="Logo" class="w-full h-full object-cover">
+                        </div>
+                        <span class="font-serif font-bold text-xl text-white">MABOUADI</span>
+                    </div>
+                    <p class="text-xs text-parme-300 leading-relaxed">
+                        Ministère d'enseignement, de révélation, doté d'une authentique onction prophétique pour former et propulser les nations.
+                    </p>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-4 uppercase tracking-wider">Accès Rapide</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#accueil" class="hover:text-amber-300 transition">Accueil</a></li>
+                        <li><a href="#a-propos" class="hover:text-amber-300 transition">À Propos des Pasteurs</a></li>
+                        <li><a href="#ecoles" class="hover:text-amber-300 transition">Formations & Écoles</a></li>
+                        <li><a href="#boutique" class="hover:text-amber-300 transition font-semibold text-amber-200">Boutique & Librairie</a></li>
+                        <li><a href="#invitation" class="hover:text-amber-300 transition font-semibold text-amber-200">Formulaire d'Invitation</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-4 uppercase tracking-wider">Communauté & Méditation</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="https://whatsapp.com/channel/0029VbDNaQ3Lo4hfjXT47g3L" target="_blank" class="hover:text-amber-300 transition flex items-center gap-1.5"><i class="fa-brands fa-whatsapp text-emerald-400"></i> Méditation du Jour (WhatsApp)</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">EPI - École Prophétique</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">Femmes Multidimensionnelles</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">École de la Famille</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-4 uppercase tracking-wider">Programmes</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#" class="hover:text-amber-300 transition">EPI - École Prophétique</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">Femmes Multidimensionnelles</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">École de la Famille</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">Alliance de Fécondité</a></li>
+                        <li><a href="#" class="hover:text-amber-300 transition">BEIL Leadership</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h4 class="font-bold text-white text-sm mb-4 uppercase tracking-wider">Réseaux Sociaux</h4>
+                    <div class="flex space-x-3 text-lg">
+                        <a href="https://www.instagram.com/sosthene_mabouadi/" target="_blank" class="w-9 h-9 rounded-full bg-parme-900 hover:bg-parme-700 flex items-center justify-center text-white transition">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" target="_blank" class="w-9 h-9 rounded-full bg-parme-900 hover:bg-parme-700 flex items-center justify-center text-white transition">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a href="#" target="_blank" class="w-9 h-9 rounded-full bg-parme-900 hover:bg-parme-700 flex items-center justify-center text-white transition">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="#" target="_blank" class="w-9 h-9 rounded-full bg-parme-900 hover:bg-parme-700 flex items-center justify-center text-white transition">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="pt-8 text-center text-xs text-parme-400">
+                <p>© 2026 Mabouadi Ministries. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Toggle mobile drawer menu
+        const menuBtn = document.getElementById('menuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Checkout Modal Functions
+        let selectedProduct = "";
+        let selectedPrice = 0;
+
+        function openCheckoutModal(productName, price) {
+            selectedProduct = productName;
+            selectedPrice = price;
+            document.getElementById('modalProductTitle').innerText = productName;
+            document.getElementById('modalProductPrice').innerText = "Prix : " + price.toFixed(2) + " €";
+            document.getElementById('checkoutSuccess').classList.add('hidden');
+            document.getElementById('checkoutModal').classList.remove('hidden');
+        }
+
+        function closeCheckoutModal() {
+            document.getElementById('checkoutModal').classList.add('hidden');
+        }
+
+        function handleCheckoutSubmit(e) {
+            e.preventDefault();
+            const successDiv = document.getElementById('checkoutSuccess');
+            successDiv.classList.remove('hidden');
+            setTimeout(() => {
+                closeCheckoutModal();
+                alert("Merci pour votre commande ! Le module de paiement sécurisé simulé a bien pris en compte votre article : " + selectedProduct);
+            }, 1500);
+        }
+
+        // In-memory array of invitations (Starts with 3 sample items)
+        let invitationsList = [
+            { id: 1, firstname: "Jean-Marc", lastname: "Dupont", email: "jm.dupont@eglise-bordeaux.fr", phone: "+33 6 12 34 56 78", organization: "Centre Chrétien Espoir", city: "Bordeaux", country: "France", meetingType: "Culte dominical", desiredDate: "2026-05-12", speakerships: "2 séances", budget: "Transport + Offrande", description: "Invitation pour notre culte spécial de réveil.", status: "En attente" },
+            { id: 2, firstname: "Priscille", lastname: "Mengue", email: "p.mengue@gabon-revival.org", phone: "+241 07 00 11 22", organization: "Ministère Foi & Victoire", city: "Libreville", country: "Gabon", meetingType: "Séminaire / Retraite", desiredDate: "2026-07-20", speakerships: "3 interventions", budget: "Prise en charge complète", description: "Séminaire prophétique pour les leaders et femmes.", status: "Validée" },
+            { id: 3, firstname: "Marc", lastname: "Vandermeer", email: "marc@brussels-church.be", phone: "+32 4 99 88 77 66", organization: "Église Grace Bruxelles", city: "Bruxelles", country: "Belgique", meetingType: "Conférence", desiredDate: "2026-09-15", speakerships: "1 intervention", budget: "Honoraires + Voyage", description: "Conférence annuelle sur le leadership exécutif.", status: "En attente" }
+        ];
+
+        // Products list in memory with image support
+        let boutiqueProducts = [
+            { id: 1, title: "Prendre sa Place dans son Ethnos", price: 22.00, category: "Livre / Guide Spirituel", image: "", description: "Un manuel de référence indispensable pour comprendre comment influencer votre sphère socioprofessionnelle avec une onction et une sagesse divines." },
+            { id: 2, title: "L'École Prophétique : Les Fondations", price: 35.00, category: "Série d'Enseignements", image: "", description: "Coffret de 6 audios exclusifs pour aiguiser votre discernement spirituel, reconnaître la voix de l'Esprit et exercer le don prophétique selon les Écritures." },
+            { id: 3, title: "L'Alliance de Fécondité & Restauration", price: 18.50, category: "Guide de Prière", image: "", description: "Un guide puissant de prières prophétiques et décrets de foi pour les couples, la restauration du foyer et la promesse de la fécondité." }
+        ];
+
+        // Render boutique products on public page
+        function renderBoutiqueStore() {
+            const container = document.querySelector('#boutique .grid');
+            if (!container) return;
+            
+            container.innerHTML = "";
+            boutiqueProducts.forEach(prod => {
+                let imageHeaderHTML = '';
+                if (prod.image && prod.image.trim() !== '') {
+                    imageHeaderHTML = `
+                        <div class="h-64 bg-slate-900 relative overflow-hidden">
+                            <img src="${prod.image}" alt="${prod.title}" class="w-full h-full object-cover group-hover:scale-105 transition duration-500" onerror="this.onerror=null; this.src='https://placehold.co/600x400/581c87/ffffff?text=Mabouadi+Ministries'">
+                            <div class="absolute inset-0 bg-gradient-to-t from-parme-950/80 via-transparent to-transparent"></div>
+                            <span class="absolute top-4 left-4 bg-parme-800/90 backdrop-blur-sm text-white text-[10px] font-bold px-2.5 py-1 rounded-full uppercase tracking-wider">${prod.category}</span>
+                        </div>
+                    `;
+                } else {
+                    imageHeaderHTML = `
+                        <div class="h-64 bg-gradient-to-br from-parme-800 to-parme-950 p-6 flex items-center justify-center relative text-white text-center">
+                            <div>
+                                <div class="w-16 h-16 rounded-2xl bg-parme-700 mx-auto flex items-center justify-center text-3xl mb-3 shadow-md">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                                <span class="text-xs font-semibold text-amber-300 uppercase tracking-widest block">${prod.category}</span>
+                                <h3 class="font-serif font-bold text-xl mt-1">${prod.title}</h3>
+                            </div>
+                        </div>
+                    `;
+                }
+
+                const div = document.createElement('div');
+                div.className = "bg-slate-50 rounded-2xl border border-slate-200 overflow-hidden hover:shadow-lg transition flex flex-col group";
+                div.innerHTML = `
+                    ${imageHeaderHTML}
+                    <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                        <div>
+                            ${prod.image ? `<h3 class="font-serif font-bold text-lg text-slate-900 mb-1">${prod.title}</h3>` : ''}
+                            <p class="text-slate-600 text-xs leading-relaxed">
+                                ${prod.description}
+                            </p>
+                        </div>
+                        <div class="flex items-center justify-between pt-4 border-t border-slate-200">
+                            <span class="font-serif font-bold text-lg text-parme-900">${prod.price.toFixed(2)} €</span>
+                            <button onclick="openCheckoutModal('${prod.title.replace(/'/g, "\\'")}', ${prod.price})" class="px-4 py-2.5 rounded-xl bg-parme-700 hover:bg-parme-800 text-white font-bold text-xs transition flex items-center gap-1.5 shadow">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <span>Commander</span>
+                            </button>
+                        </div>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+            document.getElementById('statProducts').innerText = boutiqueProducts.length;
+        }
+
+        // Admin Tab Switching
+        function switchAdminTab(tab) {
+            const invBtn = document.getElementById('tabInvitationsBtn');
+            const boutBtn = document.getElementById('tabBoutiqueBtn');
+            const invSec = document.getElementById('adminInvitationsSection');
+            const boutSec = document.getElementById('adminBoutiqueSection');
+
+            if (tab === 'invitations') {
+                invBtn.className = "px-5 py-3 font-bold text-sm border-b-2 border-parme-700 text-parme-900 transition";
+                boutBtn.className = "px-5 py-3 font-semibold text-sm border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition";
+                invSec.classList.remove('hidden');
+                boutSec.classList.add('hidden');
+            } else {
+                boutBtn.className = "px-5 py-3 font-bold text-sm border-b-2 border-parme-700 text-parme-900 transition";
+                invBtn.className = "px-5 py-3 font-semibold text-sm border-b-2 border-transparent text-slate-500 hover:text-slate-800 transition";
+                boutSec.classList.remove('hidden');
+                invSec.classList.add('hidden');
+                loadAdminProductsTable();
+            }
+        }
+
+        function loadAdminProductsTable() {
+            const tbody = document.getElementById('adminProductsTableBody');
+            tbody.innerHTML = "";
+            boutiqueProducts.forEach(prod => {
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 transition";
+                tr.innerHTML = `
+                    <td class="px-6 py-4 font-semibold text-slate-900 flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-lg bg-parme-100 overflow-hidden shrink-0 flex items-center justify-center text-parme-700">
+                            ${prod.image ? `<img src="${prod.image}" class="w-full h-full object-cover">` : '<i class="fa-solid fa-book"></i>'}
+                        </div>
+                        <div>
+                            ${prod.title}
+                            <div class="text-[11px] text-slate-400 font-normal truncate max-w-xs">${prod.description}</div>
+                        </div>
+                    </td>
+                    <td class="px-6 py-4 text-parme-800 font-medium">${prod.category}</td>
+                    <td class="px-6 py-4 font-bold text-slate-900">${prod.price.toFixed(2)} €</td>
+                    <td class="px-6 py-4 text-right">
+                        <button onclick="deleteProduct(${prod.id})" class="px-2.5 py-1 rounded bg-rose-50 hover:bg-rose-100 text-rose-700 font-semibold" title="Supprimer">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+        }
+
+        function openAddProductModal() {
+            document.getElementById('addProductModal').classList.remove('hidden');
+            document.getElementById('newProdTitle').value = '';
+            document.getElementById('newProdPrice').value = '';
+            document.getElementById('newProdCategory').value = '';
+            document.getElementById('newProdImage').value = '';
+            document.getElementById('newProdDesc').value = '';
+        }
+
+        function closeAddProductModal() {
+            document.getElementById('addProductModal').classList.add('hidden');
+        }
+
+        function handleAdminAddProduct(e) {
+            e.preventDefault();
+            const newP = {
+                id: Date.now(),
+                title: document.getElementById('newProdTitle').value,
+                price: parseFloat(document.getElementById('newProdPrice').value),
+                category: document.getElementById('newProdCategory').value,
+                image: document.getElementById('newProdImage').value || "",
+                description: document.getElementById('newProdDesc').value
+            };
+            boutiqueProducts.unshift(newP);
+            closeAddProductModal();
+            loadAdminProductsTable();
+            renderBoutiqueStore();
+            alert("Article ajouté avec succès à la boutique !");
+        }
+
+        function deleteProduct(id) {
+            boutiqueProducts = boutiqueProducts.filter(p => p.id !== id);
+            loadAdminProductsTable();
+            renderBoutiqueStore();
+        }
+
+        // Form Submission handler
+        function handleFormSubmit(e) {
+            e.preventDefault();
+            
+            const newInv = {
+                id: Date.now(),
+                firstname: document.getElementById('firstname').value,
+                lastname: document.getElementById('lastname').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                organization: document.getElementById('organization').value,
+                city: document.getElementById('city').value,
+                country: document.getElementById('country').value,
+                meetingType: document.getElementById('meetingType').value,
+                desiredDate: document.getElementById('desiredDate').value || "À convenir",
+                speakerships: document.getElementById('speakerships').value || "1",
+                budget: document.getElementById('budget').value || "À discuter",
+                description: document.getElementById('description').value,
+                status: "En attente"
+            };
+
+            invitationsList.unshift(newInv);
+            updateStatsAndTable();
+
+            const form = document.getElementById('invitationForm');
+            const feedback = document.getElementById('feedbackMessage');
+
+            form.classList.add('hidden');
+            feedback.classList.remove('hidden');
+            feedback.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }
+
+        // Admin Auth Modal Functions
+        function openAdminLogin() {
+            document.getElementById('adminLoginModal').classList.remove('hidden');
+            document.getElementById('adminPassword').value = '';
+            document.getElementById('loginError').classList.add('hidden');
+        }
+
+        function closeAdminLogin() {
+            document.getElementById('adminLoginModal').classList.add('hidden');
+        }
+
+        function handleAdminLogin(e) {
+            e.preventDefault();
+            const pass = document.getElementById('adminPassword').value;
+            if (pass === "admin2026" || pass === "admin") {
+                closeAdminLogin();
+                document.getElementById('adminPanel').classList.remove('hidden');
+                loadInvitationsTable();
+            } else {
+                document.getElementById('loginError').classList.remove('hidden');
+            }
+        }
+
+        function closeAdminPanel() {
+            document.getElementById('adminPanel').classList.add('hidden');
+        }
+
+        // Populate Table and Stats
+        function loadInvitationsTable() {
+            const tbody = document.getElementById('adminTableBody');
+            tbody.innerHTML = "";
+
+            let pendingCount = 0;
+
+            invitationsList.forEach((inv) => {
+                if (inv.status === "En attente") pendingCount++;
+
+                const tr = document.createElement('tr');
+                tr.className = "hover:bg-slate-50 transition";
+                tr.innerHTML = `
+                    <td class="px-6 py-4 font-semibold text-slate-900">
+                        ${inv.firstname} ${inv.lastname}
+                        <div class="text-[11px] text-slate-400 font-normal">${inv.email}</div>
+                    </td>
+                    <td class="px-6 py-4">
+                        <span class="font-medium text-parme-800">${inv.meetingType}</span>
+                        <div class="text-[11px] text-slate-500">${inv.organization}</div>
+                    </td>
+                    <td class="px-6 py-4">${inv.city}, ${inv.country}</td>
+                    <td class="px-6 py-4">
+                        <span class="px-2.5 py-1 rounded-full text-[10px] font-bold ${inv.status === 'Validée' ? 'bg-emerald-100 text-emerald-800' : 'bg-amber-100 text-amber-800'}">
+                            ${inv.status}
+                        </span>
+                    </td>
+                    <td class="px-6 py-4 text-right space-x-2">
+                        <button onclick="toggleStatus(${inv.id})" class="px-2.5 py-1 rounded bg-parme-100 hover:bg-parme-200 text-parme-900 font-semibold" title="Changer le statut">
+                            <i class="fa-solid fa-shuffle"></i>
+                        </button>
+                        <button onclick="deleteInvitation(${inv.id})" class="px-2.5 py-1 rounded bg-rose-50 hover:bg-rose-100 text-rose-700 font-semibold" title="Supprimer">
+                            <i class="fa-solid fa-trash"></i>
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+
+            document.getElementById('statTotal').innerText = invitationsList.length;
+            document.getElementById('statPending').innerText = pendingCount;
+        }
+
+        function toggleStatus(id) {
+            const inv = invitationsList.find(i => i.id === id);
+            if (inv) {
+                inv.status = inv.status === "En attente" ? "Validée" : "En attente";
+                loadInvitationsTable();
+            }
+        }
+
+        function deleteInvitation(id) {
+            invitationsList = invitationsList.filter(i => i.id !== id);
+            loadInvitationsTable();
+        }
+
+        function toggleAIWidget() {
+            // Scroll to AI widget or focus input
+            const aiInput = document.getElementById('aiChatInput');
+            if (aiInput) {
+                aiInput.focus();
+                aiInput.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            }
+        }
+
+        // Gemini AI Assistant Chat Logic
+        async function handleAIChatSubmit(e) {
+            e.preventDefault();
+            const inputField = document.getElementById('aiChatInput');
+            const prompt = inputField.value.trim();
+            if (!prompt) return;
+
+            appendChatMessage('user', prompt);
+            inputField.value = '';
+
+            // Show typing indicator
+            const typingId = appendChatMessage('ai', 'Réflexion en cours par l\'IA...');
+
+            try {
+                const systemPrompt = `Tu es l'assistant IA administrateur du site Mabouadi Ministries (dirigé par les Pasteurs Sosthène et Nina Mabouadi à Bordeaux). Tu aides le secrétariat à gérer les invitations, analyser les demandes, et administrer la boutique. 
+                Voici l'état actuel des invitations en mémoire : ${JSON.stringify(invitationsList)}. 
+                Voici les produits actuels en boutique : ${JSON.stringify(boutiqueProducts)}.
+                Si l'utilisateur te demande d'ajouter un produit en boutique (par exemple "ajoute le livre X à 25 euros"), tu dois extraire les informations et formuler ta réponse en incluant un bloc code JSON spécial au format __ADD_PRODUCT:{"title":"...","price":25,"category":"...","description":"..."}__ pour que le système puisse l'ajouter automatiquement. Réponds chaleureusement et chrétiennement en français.`;
+                
+                const apiKey = "";
+                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+                
+                const payload = {
+                    contents: [{ parts: [{ text: prompt }] }],
+                    systemInstruction: { parts: [{ text: systemPrompt }] }
+                };
+
+                const response = await fetch(apiUrl, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await response.json();
+                let text = result.candidates?.[0]?.content?.parts?.[0]?.text || "Je suis désolé, je n'ai pas pu traiter votre demande pour le moment.";
+
+                // Check if AI generated a product addition directive
+                const match = text.match(/__ADD_PRODUCT:(.*?)__/);
+                if (match) {
+                    try {
+                        const productData = JSON.parse(match[1]);
+                        boutiqueProducts.unshift({
+                            id: Date.now(),
+                            title: productData.title,
+                            price: productData.price,
+                            category: productData.category || "Ressource",
+                            description: productData.description || "Ajouté par l'Assistant IA."
+                        });
+                        loadAdminProductsTable();
+                        renderBoutiqueStore();
+                        text = text.replace(/__ADD_PRODUCT:.*?__/, "").trim() + "\n\n✨ [Article ajouté avec succès à la boutique par l'IA !]";
+                    } catch(err) {
+                        console.error(err);
+                    }
+                }
+
+                // Remove typing indicator and add response
+                document.getElementById(typingId).remove();
+                appendChatMessage('ai', text);
+
+            } catch (err) {
+                document.getElementById(typingId).remove();
+                appendChatMessage('ai', "J'ai rencontré une petite erreur de connexion, mais je suis là pour vous aider à gérer vos invitations et votre boutique !");
+            }
+        }
+
+        function sendQuickPrompt(text) {
+            document.getElementById('aiChatInput').value = text;
+        }
+
+        function appendChatMessage(sender, text) {
+            const chatContainer = document.getElementById('aiChatMessages');
+            const msgId = 'msg-' + Date.now() + Math.random();
+            const div = document.createElement('div');
+            div.id = msgId;
+            div.className = `flex items-start space-x-2 ${sender === 'user' ? 'justify-end' : ''}`;
+
+            if (sender === 'user') {
+                div.innerHTML = `
+                    <div class="bg-parme-700 text-white p-3 rounded-2xl shadow-sm max-w-[85%] leading-relaxed">
+                        ${text}
+                    </div>
+                    <div class="w-7 h-7 rounded-full bg-slate-800 text-white flex items-center justify-center shrink-0 font-bold text-xs">Admin</div>
+                `;
+            } else {
+                div.innerHTML = `
+                    <div class="w-7 h-7 rounded-full bg-parme-700 text-white flex items-center justify-center shrink-0 font-bold text-xs">AI</div>
+                    <div class="bg-white p-3 rounded-2xl shadow-sm border border-slate-200 text-slate-700 max-w-[85%] leading-relaxed">
+                        ${text}
+                    </div>
+                `;
+            }
+
+            chatContainer.appendChild(div);
+            chatContainer.scrollTop = chatContainer.scrollHeight;
+            return msgId;
+        }
+    </script>
+</body>
+</html>
